@@ -50,8 +50,10 @@ Sensor-data-Server/
 ```bash
 git clone https://github.com/your-username/Sensor-data-Server.git
 cd Sensor-data-Server
+```
 
 <h1>install Dependencies"</h1>
+
 npm install
 PORT=3000
 MONGO_URI=your_mongo_atlas_connection_string
