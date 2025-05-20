@@ -52,17 +52,19 @@ git clone https://github.com/your-username/Sensor-data-Server.git
 cd Sensor-data-Server
 ```
 
-<h1>install Dependencies"</h1>
+<h1>Install Dependencies"</h1>
 
 npm install
-PORT=3000
+PORT=3000 <br>
 MONGO_URI=your_mongo_atlas_connection_string
-node server.js
+node server.js <br>
 
 📬 API Endpoints
-Method	Endpoint	Description
-POST	/api/sensor	Submit sensor data
-GET	/api/sensor	Retrieve all sensor data
+Method	Endpoint	Description <br>
+POST	/api/sensor	Submit sensor data <br>
+GET	/api/sensor	Retrieve all sensor data <br>
+<hr>
+📌 Example Sensor Data JSON
 
 {
   "temperature": 24.5,
@@ -74,15 +76,15 @@ GET	/api/sensor	Retrieve all sensor data
     "longitude": 77.1025
   }
 }
-
-🌐 Deployment
-When deploying (e.g., on Render, Railway, or Heroku), ensure you:
-Use process.env.PORT || 3000 in your server.js.
+<hr>
+🌐 Deployment <br>
+When deploying (e.g., on Render, Railway, or Heroku), ensure you: <br>
+Use process.env.PORT || 3000 in your server.js. <br>
 Store MONGO_URI securely as an environment variable.
-
+<hr>
 👨‍💻 Author
-Kushal Sharma
-📧 kushalsharm4345@gmail.com
+Kushal Sharma <br>
+📧 kushalsharm4345@gmail.com <br>
 🔗 LinkedIn https://www.linkedin.com/in/kushal-sharma-67378a279/
 
 
