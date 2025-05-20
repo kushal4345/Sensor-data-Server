@@ -67,21 +67,24 @@ GET	/api/sensor	Retrieve all sensor data <br>
 📌 Example Sensor Data JSON
 
 {
-  "temperature": 24.5,
-  "humidity": 65,
-  "soilMoisture": 40,
-  "vibration": false,
-  "location": {
-    "latitude": 28.7041,
-    "longitude": 77.1025
+  "temperature": 24.5, <br>
+  "humidity": 65, <br>
+  "soilMoisture": 40, <br>
+  "vibration": false, <br>
+  "location": { <br>
+    "latitude": 28.7041, <br>
+    "longitude": 77.1025 <br>
   }
 }
 <hr>
-🌐 Deployment <br>
+
+🌐 Deployment
+ <br>
 When deploying (e.g., on Render, Railway, or Heroku), ensure you: <br>
 Use process.env.PORT || 3000 in your server.js. <br>
 Store MONGO_URI securely as an environment variable.
 <hr>
+
 👨‍💻 Author
 Kushal Sharma <br>
 📧 kushalsharm4345@gmail.com <br>
