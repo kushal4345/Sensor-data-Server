@@ -1,15 +1,14 @@
 const mongoose = require('mongoose');
 
-const SensorDataSchema = new mongoose.Schema({
-  temperature: Number,          
-  humidity: Number,               
-  soilMoisture: Number,           
-  vibration: Boolean,           
-  location: {
-    latitude: Number,
-    longitude: Number             
+const sensorDataSchema = new mongoose.Schema({
+  gps: {
+    lat: Number,
+    lng: Number
   },
-  timestamp: { type: Date, default: Date.now } 
-}, { timestamps: true });
+  temperature: Number,
+  humidity: Number,
+  soilMoisture: Number,
+  vibration: Boolean
+}, { timestamps: true })
 
-module.exports = mongoose.model('SensorData', SensorDataSchema);
+module.exports = mongoose.model('SensorData', sensorDataSchema);
